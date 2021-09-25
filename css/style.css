@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-size: 18px;
+    font-family: 'Open Sans';
+    color: #3d3d3d;
+}
+
+main {
+    padding: 10px 12%;
+    min-height: 70vh;
+}
+
+#menu-btn {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 17px;
+    right: 20px;
+    display: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Roboto;
+    letter-spacing: 1px;
+}
+
+img {
+    max-width: 100%;
+}
+
+p {
+    font-size: 17px;
+    line-height: 150%;
+}
+
+main h2 {
+    text-transform: uppercase;
+    color: rgb(207, 19, 19);
+}
+
+.centered {
+    text-align: center;
+}
+
+.top-section {
+    min-height: 25vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:white;
+    background-position: 0% 60%;
+    padding: 100px 0px;
+    text-align: center;
+}
+
+
+
+#index {
+    min-height: 80vh;
+    background: linear-gradient(#050331c7, #04042e81), url("../images/index-bg.jpg");
+    background-position: 0% 60%;
+}
+
+#statistics {
+    background: linear-gradient(#050331c7, #04042e81), url("../images/statistics.jpg");
+    background-position: 0% 60%;
+}
+
+#protectie {
+    background: linear-gradient(#050331c7, #04042e81), url("https://production-tcf.imgix.net/app/uploads/2020/09/02133407/halting-workplace-01.png?auto=format%2Ccompress&q=80&fit=crop&w=1200&h=600");
+    background-position: 0% 60%;
+}
+
+#intrebari {
+    background: linear-gradient(#050331c7, #04042e81), url("https://cdn.aarp.net/content/dam/aarp/health/conditions_treatments/2020/05/1140-covid-myth-questions.imgcache.rev.web.900.513.jpg");
+    background-size: contain;
+    background-position: 10% 0%;
+
+}
+
+header {
+    width: 100%;
+    position:absolute;
+    top: 0px;
+    padding: 30px 4%;
+}
+
+footer {
+    min-height: 60px;
+    background-color: rgb(9, 7, 133);
+    color: white;
+    text-align: center;
+    padding: 1px 10px 20px 10px;
+    margin-top: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+navbar {
+    float:right;
+}
+
+
+navbar a {
+    color: white !important;
+    padding: 0px 15px 10px 15px;
+    font-size: 22px;
+    display: inline-block;
+}
+
+navbar a:hover, .active {
+    font-weight: bold;
+    border-bottom: 2px solid rgb(6, 180, 64);
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 34px;
+    display: inline-block;
+    margin-top: -20px;
+}
+
+.fa-shield-virus {
+    color: rgb(6, 180, 64);
+}
+
+.big {
+    font-size: 80px;
+}
+
+.top-section h1 {
+    font-size: 42px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.linia-verde {
+    background-color: rgb(5, 155, 55);
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.linia-verde a {
+    color: white !important;
+}
+
+.row {
+    overflow: auto;
+}
+
+[class^="col-"] {
+    float: left;
+    padding: 10px 20px;
+}
+.col-10 {width: 10%;}
+.col-20 {width: 20%;}
+.col-30 {width: 30%;}
+.col-33 {width: 33%;}
+.col-40 {width: 40%;}
+.col-50 {width: 50%;}
+.col-60 {width: 60%;}
+.col-70 {width: 70%;}
+.col-80 {width: 80%;}
+.col-90 {width: 90%;}
+.col-100 {width: 100%;}
+
+.simptome {
+    font-size: 24px;
+    list-style-type: none;
+    padding-left: 0px;
+}
+.simptome li {
+    margin-bottom: 45px;
+}
+
+.simptome i {
+    display: block;
+    font-size: 34px;
+    margin-bottom: 12px;
+}
+
+.noutate {
+    border: 1px solid lightgray;
+    margin-bottom: 15px;
+    padding: 0px 15px;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.noutate img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+}
+
+.noutate h3 {
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.data {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.md-stat-desk {
+    width: 100%;
+    height: 80vh;
+}
+
+.md-stat-mobile {
+    width: 100%;
+    height: 65vh;
+    display: none;
+}
+
+.short-stat {
+    max-width: 350px;
+}
+
+.video-covid {
+    width: 100%;
+    max-width: 350px;
+    height: 200px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(114, 7, 7, 0.3) 0px 8px 16px -8px;
+    margin-top: 20px;
+}
+
+
+.img-prot {
+    width: 100%;
+    max-height: 400px;
+    max-width: 400px;
+}
+
+.contact {
+    margin: 20px 4px;
+    padding: 10px;
+    border: 2px solid lightgray;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(114, 7, 7, 0.3) 0px 8px 16px -8px;
+    overflow: auto;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    resize: none;
+    font-family: 'Open sans';
+    padding: 2px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+#transmite {
+    margin-top: 15px;
+    float:right;
+    font-size: 14px;
+}
+
+.show {
+    display: block !important;
+}
+
+@media (max-width: 1100px) {
+    main {
+        padding: 10px 5%;
+    }
+}
+
+@media (max-width: 840px) {
+    main {
+        padding: 10px 4px;
+    }
+
+    header {
+        padding: 10px;
+        background-color: rgb(1, 15, 63);
+    }
+
+    .logo {
+        margin-top: 0px;
+    }
+
+    navbar {
+        float:none;
+        display: none;
+    }
+
+    navbar a {
+        display: block;
+        text-align: center;
+        padding: 15px;
+    }
+
+    #menu-btn {
+        display: block;
+    }
+
+    #index {
+        background-position: 45% 50%;
+    }
+
+    [class^="col-"] {
+        width: 100%;
+        padding: 15px 10px;
+    }
+
+    .md-stat-mobile {
+        display: block;
+    }
+
+    .md-stat-desk {
+        display: none;
+    }
+}

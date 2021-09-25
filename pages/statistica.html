@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Informare Covid</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Informare situatie COVID Moldova">
+    <meta name="author" content="Ernest Bitca">
+    <meta name="keyword" content="Covid-19, Moldova, coronavirus, situatie, informatie">
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+</head>
+
+<body>
+
+    <header>
+        <a class="logo" href="../index.html">
+            CIC <i class="fas fa-shield-virus"></i>
+        </a>
+        <i id="menu-btn" class="fas fa-bars" onclick="menu()"></i>
+        <navbar id="navbar">
+            <a href="../index.html">CIC</a>
+            <a href="protejare.html">Cum ne protejăm ?</a>
+            <a href="statistica.html" class="active">Statistică</a>
+            <a href="intrebari.html">Întrebări/Răspunsuri</a>
+        </navbar>
+    </header>
+
+    <section class="top-section" id="statistics">
+        <h1>Statistică</h1>
+    </section>
+
+    <main>
+        <h2 class="centered">Situația în țară</h2>
+        
+        <iframe class="md-stat-desk"
+            src="https://gismoldova.maps.arcgis.com/apps/opsdashboard/index.html#/d274da857ed345efa66e1fbc959b021b">
+        </iframe>
+
+        <iframe class="md-stat-mobile"
+            src="https://gismoldova.maps.arcgis.com/apps/opsdashboard/index.html#/09139ac36f8943529cef2e00f802c3fc">
+        </iframe>
+
+        <h2 class="centered">Cazuri noi</h2>
+        <iframe src="https://ourworldindata.org/grapher/daily-tests-and-daily-new-confirmed-covid-cases?country=~MDA"
+            loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+
+        <h2 class="centered">Situația în alte țari</h2>
+        <iframe
+            src="https://ourworldindata.org/explorers/coronavirus-data-explorer?zoomToSelection=true&time=2020-03-01..latest&facet=none&pickerSort=desc&pickerMetric=new_cases_smoothed_per_million&Metric=Confirmed+cases&Interval=7-day+rolling+average&Relative+to+Population=true&Align+outbreaks=false&country=RUS~MDA~ROU~UKR~ITA~GBR&hideControls=true"
+            loading="lazy" style="width: 100%; height: 600px; border: 0px none;"></iframe>
+
+    </main>
+
+    <footer>
+        <h1><i class="fas fa-shield-virus"></i></h1>
+        <h3>Centru de informare COVID ©</h3>
+        <small>Acest site este efectuat cu un scop pur educațional.</small>
+    </footer>
+
+
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>
